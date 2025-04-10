@@ -3,7 +3,7 @@
         relative_to="base_link">
         {{ sensor.pose }}
     </pose>
-    <link name="mount_link">
+    <link name="gimbal_base">
         <inertial>
         <pose>-0.02552 0 -0.08136 0 0 0</pose>
         <mass>1e-6</mass>
@@ -178,12 +178,12 @@
 
 <joint name="{{ sensor.name }}_joint" type="fixed">
     <parent>base_link</parent>
-    <child>{{ sensor.name }}::mount_link</child>
+    <child>{{ sensor.name }}::gimbal_base</child>
 </joint>
 
 <!-- mount to roll Joint -->
 <joint name="{{ sensor.name }}_yaw_joint" type="revolute">
-    <parent>{{ sensor.name }}::mount_link</parent>
+    <parent>{{ sensor.name }}::gimbal_base</parent>
     <child>{{ sensor.name }}::_0::yaw_roll_link</child>
     <pose>-0.02552 0 0 0 0 0</pose>
     <axis>

@@ -62,6 +62,7 @@
 #include "as2_behavior_tree/decorator/wait_for_alert.hpp"
 #include "as2_behavior_tree/decorator/wait_for_event.hpp"
 
+#include "as2_behavior_tree/action/point_gimbal_gps_action.hpp"
 
 int main(int argc, char * argv[])
 {
@@ -101,6 +102,8 @@ int main(int argc, char * argv[])
   factory.registerNodeType<as2_behavior_tree::GpsToCartesian>("GpsToCartesian");
   factory.registerNodeType<as2_behavior_tree::GoToGpsAction>("GoToGps");
   factory.registerNodeType<as2_behavior_tree::FollowPathAction>("FollowPath");
+
+  factory.registerNodeType<as2_behavior_tree::PointGimbalGpsAction>("PointGimbalGpsAction");
 
   BT::NodeConfiguration * config = new BT::NodeConfiguration();
   // Create the blackboard that will be shared by all of the nodes in the tree

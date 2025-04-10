@@ -1,0 +1,33 @@
+digraph G {
+"drone0" -> "drone0/rotor_3"[label=" Broadcaster: default_authority\nAverage rate: 250.249\nBuffer length: 4.02\nMost recent transform: 415.576\nOldest transform: 411.556\n"];
+"drone0/odom" -> "drone0"[label=" Broadcaster: default_authority\nAverage rate: 83.613\nBuffer length: 3.576\nMost recent transform: 415.572\nOldest transform: 411.996\n"];
+"drone0" -> "drone0/rotor_2"[label=" Broadcaster: default_authority\nAverage rate: 250.249\nBuffer length: 4.02\nMost recent transform: 415.576\nOldest transform: 411.556\n"];
+"drone0" -> "drone0/rotor_0"[label=" Broadcaster: default_authority\nAverage rate: 250.249\nBuffer length: 4.02\nMost recent transform: 415.576\nOldest transform: 411.556\n"];
+"drone0" -> "drone0/rotor_1"[label=" Broadcaster: default_authority\nAverage rate: 250.249\nBuffer length: 4.02\nMost recent transform: 415.576\nOldest transform: 411.556\n"];
+"drone0/odom" -> "drone0/base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/map" -> "drone0/odom"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"drone0/gimbal/_0/_1/_2/camera/hd_camera" -> "drone0/gimbal/_0/_1/_2/camera/hd_camera/camera"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0/_1/_2/camera" -> "drone0/gimbal/_0/_1/_2/camera/hd_camera"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0/_1/_2" -> "drone0/gimbal/_0/_1/_2/camera"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0/_1" -> "drone0/gimbal/_0/_1/_2"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0/_1/_2" -> "drone0/gimbal/_0/_1/_2/camera_enu_link"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0" -> "drone0/gimbal/_0/_1"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0/_1" -> "drone0/gimbal/_0/_1/roll_pitch_link"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal" -> "drone0/gimbal/_0"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0" -> "drone0/gimbal"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0" -> "drone0/base_link"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0" -> "drone0/gps"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal/_0" -> "drone0/gimbal/_0/yaw_roll_link"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0" -> "drone0/imu"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/imu" -> "drone0/imu/internal"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/imu/internal" -> "drone0/imu/internal/imu"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gps" -> "drone0/gps/gps"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gps/gps" -> "drone0/gps/gps/navsat"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"drone0/gimbal" -> "drone0/gimbal/gimbal_base"[label=" Broadcaster: default_authority\nAverage rate: 83.583\nBuffer length: 4.008\nMost recent transform: 415.572\nOldest transform: 411.564\n"];
+"earth" -> "drone0/map"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"drone0/gimbal/_0/_1/_2/camera/hd_camera/camera" -> "drone0/gimbal/_0/_1/_2/camera/hd_camera/camera/optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1743628935.0320222"[ shape=plaintext ] ;
+}->"earth";
+}

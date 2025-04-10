@@ -4,14 +4,25 @@
     gimbal_name: gimbal # Name of the gimbal
     gimbal_frame_id: gimbal # Name of the gimbal frame
     gimbal_base_frame_id: gimbal_base # Name of the base frame of the gimbal
-    gimbal_threshold: 0.05 # Threshold for the gimbal angle
+    gimbal_threshold: 0.001 # Threshold for the gimbal angle
     tf_timeout_threshold: 0.05 # Default tf timeout (50ms)
+    # roll_range:
+    #   min: -3.14 # Minimum roll angle
+    #   max: 3.14 # Maximum roll angle
+    # pitch_range:
+    #   min: -1.57 # Minimum pitch angle
+    #   max: 1.57 # Maximum pitch angle
+    # yaw_range:
+    #   min: -3.14 # Minimum yaw angle
+    #   max: 3.14 # Maximum yaw angle
+
+
     roll_range:
-      min: -3.14 # Minimum roll angle
-      max: 3.14 # Maximum roll angle
+      min: -0.785 # Minimum roll angle -90 degrees
+      max: 0.785 # Maximum roll angle 90 degrees
     pitch_range:
-      min: -1.57 # Minimum pitch angle
-      max: 1.57 # Maximum pitch angle
+      min: -1.046666667 # Minimum pitch angle -120 degrees
+      max: 0.523333334 # Maximum pitch angle 60 degrees
     yaw_range:
-      min: -3.14 # Minimum yaw angle
-      max: 3.14 # Maximum yaw angle
+      min: -2.878333333 # Minimum yaw angle -330 degrees
+      max: 2.878333333 # Maximum yaw angle 330 degrees

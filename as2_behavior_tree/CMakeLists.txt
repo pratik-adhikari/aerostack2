@@ -56,6 +56,8 @@ set(PLUGINS_CPP_FILES
   plugins/condition/is_flying_condition.cpp
   plugins/decorator/wait_for_event.cpp
   plugins/decorator/wait_for_alert.cpp
+
+  plugins/action/point_gimbal_gps_action.cpp
 )
 
 # Create the node executable
